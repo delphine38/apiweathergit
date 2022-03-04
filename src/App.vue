@@ -8,6 +8,7 @@
   >
     <main>
       <div class="search-box">
+        <h1>Indiquer une ville</h1>
         <input
           type="text"
           class="search-bar"
