@@ -8,14 +8,19 @@
   >
     <main>
       <div class="search-box">
-        <h1>Indiquer une ville</h1>
-        <input
-          type="text"
-          class="search-bar"
-          placeholder="Search...."
-          v-model="query"
-          @keypress="fetchWeather"
-        />
+        <div class="text-center">
+          <h1 class="text-center">Indiquer une ville</h1>
+
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search...."
+            v-model="query"
+            @keypress="fetchWeather"
+            style="justify-content-center"
+          />
+        </div>
+
         <!-- {{ query }} -->
       </div>
 
@@ -146,6 +151,7 @@ main {
   min-height: 100vh;
   padding: 25px;
 }
+
 .search-box {
   width: 100%;
   margin-bottom: 30px;
