@@ -13,11 +13,10 @@
 
           <input
             type="text"
-            class="search-bar"
+            class="col-4 search-bar"
             placeholder="Search...."
             v-model="query"
             @keypress="fetchWeather"
-            style="justify-content-center"
           />
         </div>
 
@@ -151,13 +150,15 @@ main {
   min-height: 100vh;
   padding: 25px;
 }
+main input {
+  text-align: center;
+}
 
 .search-box {
   width: 100%;
   margin-bottom: 30px;
 }
 .search-box .search-bar {
-  display: block;
   width: 100%;
   padding: 15px;
 
